@@ -20,7 +20,7 @@ header {
 }
 
 .empty-space {
-    padding: 10px;
+    padding: 5px;
 }
 
 .big-empty-space {
@@ -67,9 +67,10 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 150px;
 }
 
-#contact-form {
+.form-popup {
     background-color: black;
     text-align: center;
     background: black;
@@ -87,10 +88,6 @@ input, textarea {
     width: 75%;
     max-width: 100%;
 }
-
-textarea {}
-
-textarea {}
 
 textarea {
     height: 100%;
@@ -117,6 +114,7 @@ textarea {
     border-radius: 2px;
     border: 1px solid white;
 }
+
 #close-btn {
     float: right;
     border: none;
