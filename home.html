@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/styles.css" rel="stylesheet">
+        <script type="text/javascript" src='hlysmks.js'> </script>
+    <!--    <link href="images/icon.png" rel="icon" type="image/png"> -->
+        <meta charset="utf-8">
+        <title>The Holy Smokes</title>
+    </head>
+    <body>
+        <style>
+            body {
+                background-image: url("cover.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-color: #0a0503;
+            }
+        </style>
+        <header>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="music.html">Listen</a></li>
+                    <li><a href="videos.html">Watch</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li class="icons"><a href="https://open.spotify.com/artist/18Au7JooOX1UfshSS3rZvx"><img class="icon-img" src="images/spotify.png"></a></li>
+                    <li class="icons"><a href="https://www.facebook.com/thhlysmks"><img class="icon-img" src="images/facebook.png"></a></li>
+                    <li class="icons"><a href="https://www.instagram.com/thhlysmks/"><img class="icon-img" src="images/instagram.png"></a></li>
+                    <li class="icons"><a href="https://twitter.com/thhlysmks"><img class="icon-img" src="images/twitter.png"></a></li>
+                    <li class="icons"><a href="https://www.youtube.com/channel/UC9pH93T14QPL5aIIvJ4FnlA"><img class="icon-img" src="images/youtube.png"></a></li>
+                    <li class="icons"><a href="https://thhlysmks.bandcamp.com/"><img id="bandcamp-logo" class="icon-img" src="images/bandcamp.png"></a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="empty-space"></div>
+        <div id="title">
+            <h1>We are The Holy Smokes</h1>
+        </div>
+        <div id="contact-container">
+            <button onclick="openForm()" class="btn">
+                Get in touch
+            </button>
+            <div class="form-popup" id="contact-form">
+                <button onclick="closeForm()" class="btn" id="close-btn">X</button>
+                <div class="empty-space"></div>
+                <p>Send us a message regarding gig bookings, ask us a question or just say hi!</p>
+                
+                <form action="/action_page.php" class="form-container">
+                    <label for="email"><b>Email</b></label></br>
+                    <input type="text" placeholder="Enter Email" name="email" required></br>
+                    <label for="message"><b>Message</b></label></br>
+                    <textarea placeholder="Enter your message" name="message" required></textarea></br>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="big-empty-space"></div>
+        <div id="latest">
+            <div id="new-ep">
+                <h2>New EP out now</h2>
+                <img id="ep3-cover" src="images/EP3cover.png">
+                <p>Our new EP <i>Forever in our Heads</i> is available to stream and download.</p>
+                <p>Stream on <u><a href="https://open.spotify.com/artist/18Au7JooOX1UfshSS3rZvx">Spotify</a></u></p>
+                <p>Download on <u><a href="https://thhlysmks.bandcamp.com/">Bandcamp</a></u></p>
+             </div>
+             <div class="empty-space"></div>
+             <div id="new-video">
+                 <h2>New music video</h2>
+                 <p>Watch our video for <i>Sing You a Song</i> here.</p>
+                 <iframe 
+                 width="560" 
+                 height="315" 
+                 src="https://www.youtube.com/embed/WFdPZfxip-g" 
+                 frameborder="0" 
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                 allowfullscreen></iframe>
+             </div>
+        </div>
+        <footer>
+            &copy The Holy Smokes 2021
+                <div id="credit">Website designed by Andy Mortimer</div>
+        </footer>
+    </body>
+</html>
